@@ -1,0 +1,9 @@
+@import url("https://use.typekit.net/qrd0lmh.css");
+@import "tailwindcss";
+@theme {
+  --color-pri-col: #ffffff;
+  --color-sec-col: #1d2f6f;
+  --font-poppins: "poppins", sans-serif;
+  --color-bg-dash: rgba(29, 47, 111, 0.05);
+  --color-dash-text: #9f9f9f;
+}
