@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/output.css"
+    />
+    <title>Daftar Akun</title>
+  </head>
+  <body
+    class="min-h-screen w-full bg-gray-100 flex items-center justify-center p-4"
+  >
+    <div
+      class="card w-full max-w-md bg-white rounded-xl shadow-lg flex flex-col items-center justify-center gap-4 p-8"
+    >
+      <div class="text-center">
+        <h1 class="text-3xl font-bold font-sans text-gray-800">Sign Up</h1>
+        <p class="text-gray-600 font-sans text-sm mt-2">
+          Silakan isi data diri Anda untuk membuat akun baru.
+        </p>
+      </div>
+
+      <form
+        id="signup-form"
+        class="w-full mt-4"
+      >
+        <div class="space-y-4">
+          <div>
+            <label
+              for="email"
+              class="text-gray-700 font-sans text-sm font-medium"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full h-12 bg-gray-50 rounded-lg px-4 mt-1 border border-gray-300 focus:ring-2 focus:ring-sec-col focus:border-sec-col outline-none"
+              placeholder="Masukkan email Anda"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="text-gray-700 font-sans text-sm font-medium"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full h-12 bg-gray-50 rounded-lg px-4 mt-1 border border-gray-300 focus:ring-2 focus:ring-sec-col focus:border-sec-col outline-none"
+              placeholder="Buat password Anda"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="confirm-password"
+              class="text-gray-700 font-sans text-sm font-medium"
+              >Konfirmasi Password</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              class="w-full h-12 bg-gray-50 rounded-lg px-4 mt-1 border border-gray-300 focus:ring-2 focus:ring-sec-col focus:border-sec-col outline-none"
+              placeholder="Konfirmasi password Anda"
+              required
+            />
+          </div>
+        </div>
+
+        <button
+          id="signup-button"
+          type="submit"
+          class="w-full h-12 bg-sec-col hover:bg-sec-col rounded-lg mt-6 text-white font-sans font-semibold text-base transition-colors"
+        >
+          Daftar
+        </button>
+
+        <p
+          id="message"
+          class="text-center text-sm mt-4"
+        ></p>
+      </form>
+
+      <div class="info mt-4">
+        <p class="text-gray-600 font-sans text-sm text-center">
+          Sudah punya akun?
+          <a
+            href="login.html"
+            class="text-sec-col hover:underline font-medium"
+          >
+            Masuk
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="/public/js/signup.js"></script>
+  </body>
+</html>
