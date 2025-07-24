@@ -1,13 +1,11 @@
 {
-  "name": "inventaris-alat-sekolah",
+  "name": "inventaris-ala",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
-    "start": "server.js",
-    "build": "npm run build:tailwind",
-    "dev": "npm run build:tailwind && node server.js"
+    "start": "node server.js",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",

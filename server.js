@@ -271,3 +271,5 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT} 🚀`);
   console.log(`Buka http://localhost:${PORT} di browser Anda.`);
 });
+
+module.exports = app; // Ekspor app untuk testing atau penggunaan lain
