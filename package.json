@@ -1,4 +1,14 @@
 {
+  "name": "inventaris-alat-sekolah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "start": "server.js",
+    "build": "npm run build:tailwind",
+    "dev": "npm run build:tailwind && node server.js"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "bcryptjs": "^3.0.2",
